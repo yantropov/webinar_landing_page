@@ -1,0 +1,199 @@
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin:0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1rem;
+  color: #404040;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: #fff;
+
+
+}
+
+h1 + p {
+  color: #F18119;
+  font-weight: 900;
+  font-size: 1.3125rem;
+  text-transform: uppercase;
+  margin:0;
+}
+
+h2 + p {
+  color: #F18119;
+  font-size: 1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-top:0;
+
+
+}
+
+h2 {
+  font-size: 1.3125rem;
+  margin:0;
+}
+
+strong {
+  font-weight: 900;
+
+}
+
+.top-text {
+    font-size: 0.625rem;
+    font-weight: 900;
+    color:#F18119;
+    text-transform: uppercase;
+}
+
+.fine-print {
+  font-size: 0.625rem;
+  letter-spacing: 1px;
+}
+
+/*Intro*/
+
+.intro {
+background-color: #404040;
+background-image: url(../images/foto2.jpg);
+background-blend-mode: overlay;
+background-size: cover;
+background-position: center;
+padding:0 2em 0.5em;
+
+
+
+
+}
+
+.wrapper-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 50vh;
+}
+
+
+.top-text {
+  order:-1;
+  border-top: 5px solid #F18119;
+  margin:0 auto;
+  padding-top:2px;
+  border-image:linear-gradient(to left, #ff713b,#ffa51d) 1;
+
+
+
+}
+
+/*main content*/
+
+.main-content {
+  background-image:url(../images/whirlpool.png);
+  padding: 2em 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+}
+
+.main-content h2 {
+  text-transform: uppercase;
+}
+
+.wrapper {
+  max-width: 400px;
+  margin:0 auto;
+}
+
+.email-collector {
+  width: 80%;
+  max-width: 300px;
+  margin:0 auto;
+
+}
+
+input,
+.btn {
+  width: 100%;
+  margin-bottom: 1rem;
+  font-family: inherit;
+  text-align: inherit;
+  border: 1px solid #404040;
+  border-radius: 6px;
+
+}
+
+input {
+  padding: 0.25em;
+}
+
+.btn {
+  background-image: ;
+  padding: 0.5em 1.5em;
+  font-size: .8rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 1px;
+  border:0;
+  cursor: pointer;
+}
+
+
+.btn-primary {
+
+  background: #404040;
+  color: #fff;
+  transition: all 500ms;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-image: linear-gradient(to right,#F18119,#FF713B);
+    transform: scale(1.05);
+
+
+}
+
+/*media queries*/
+
+@media (min-width: 585px) {
+  body {
+    font-size: 1.125rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2,
+  h1 + p {
+    font-size:1.75rem;
+  }
+
+  .container {
+    display:flex;
+  }
+
+  .intro, .main-content {
+    width: 50%;
+    min-height: 100vh;
+
+  }
+
+  .intro {
+    padding-top: 0;
+  }
+
+  .wrapper-intro {
+    height: 100%;
+
+  }
+}
